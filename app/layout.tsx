@@ -1,5 +1,11 @@
 import { Header, Footer } from './components'
+import { Inter } from 'next/font/google'
 import './globals.css'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
 export const metadata = {
   title: 'Bimssolutions',
@@ -13,9 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${inter.variable} font-sans`}>
         <Header />
-        <main className='bg-primary-black overflow-hidden w-full min-h-screen'>
+        <main className="w-full min-h-screen">
           {children}
         </main>
         <Footer />

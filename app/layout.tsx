@@ -21,9 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
         <Header />
-        <main className="w-full min-h-screen">
+        {/* <main className="w-full min-h-screen">
           {children}
-        </main>
+        </main> */}
         <Footer />
       </body>
     </html>

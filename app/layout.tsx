@@ -1,6 +1,6 @@
 import { Header, Footer } from './components'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import './styles/globals.css'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -18,12 +18,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.variable} font-sans`}>
         <Header />
-        {/* <main className="w-full min-h-screen">
+        <main className="w-full overflow-hidden min-h-screen">
           {children}
-        </main> */}
+        </main>
         <Footer />
       </body>
     </html>

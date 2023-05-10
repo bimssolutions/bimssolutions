@@ -9,8 +9,7 @@
 }
 
 html {
-  --scroll-behavior: smooth!important;
-scroll-behavior: smooth!important;
+  min-height: 100%;
 }
 
 .gradient-01 {

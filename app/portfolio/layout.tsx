@@ -5,7 +5,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <div className='bg-primary-black overflow-hidden w-full min-h-screen'>
+      <div className='overflow-hidden w-full min-h-screen'>
         {children}
       </div>
     </>

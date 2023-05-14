@@ -1,10 +1,15 @@
 /** @type {import('next').NextConfig} */
+const path = require('path');
+
 const nextConfig = {
   experimental: {
-    appDir: true,
+    serverActions: true,
   },
   images: {
-    domains: ['127.0.0.1'],
+    domains: ["bimss-db.pockethost.io"],
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
   },
 }
 

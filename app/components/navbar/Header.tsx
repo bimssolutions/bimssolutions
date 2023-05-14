@@ -1,10 +1,10 @@
 "use client"
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-// import { motion } from "framer-motion"
-
-type Props = {}
+import { motion } from "framer-motion"
+import { navVariants } from '@/app/utils/animations'
 
 interface NavItems {
   label: string,
@@ -17,76 +17,53 @@ const NAV_ITEMS: NavItems[] = [
     url: '/'
   },
   {
-    label: 'About us',
-    url: '/'
-  }, 
-  {
-    label: 'Portfolio',
-    url: '/'
+    label: 'Over ons',
+    url: '/over-ons'
   },
   {
-    label: 'Contact',
-    url: '/'
-  }
+    label: 'Diensten',
+    url: '/diensten'
+  },
+  {
+    label: 'Portfolio',
+    url: '/portfolios'
+  },
+  {
+    label: 'Werkwijze',
+    url: '/werkwijze'
+  },
 ]
 
-const Header = (props: Props) => {
+const Header = () => {
   const [toggle, setToggle] = useState(false)
+  
   return (
-    <header className='fixed w-full top-0 px-4 h-20 z-20 shadow-sm'>
+    <motion.header
+      variants={navVariants}
+      className='sticky bg-white border bg-opacity-70 backdrop-filter backdrop-blur-sm w-full top-0 sm:px-16 xs:px-8 px-4 h-20 z-20'
+    >
+      <div className="absolute w-[50%] inset-0 gradient-01" />
       <div className='flex items-center justify-between h-full max-w-7xl mx-auto'>
-        <Image src={`/assets/bimss-logo.png`} width={125} height={40} alt="bimssolutions logo" />
-        <div onClick={() => setToggle(prev => !prev)} className="block md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-          {/* {toggle ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-          ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-          )} */}
-        </div>
-        <nav className={`${toggle ? 'block' : 'hidden'} flex-col space-y-8 md:flex md:space-x-6 md:space-y-0 md:flex-row flex space-x-4`}>
+        <Link
+          href="/"
+          className="z-0"
+        >
+          <Image src={`/assets/bimssolutions-logo.svg`}
+            width={204}
+            height={45}
+            alt="bimssolutions logo" />
+        </Link>
+        <div className={toggle ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ease-in duration-500' : ''}></div>
+        <nav className={`${toggle ? 'fixed right-0 flex-col space-y-8 md:flex md:space-x-6 md:space-y-0 md:flex-row flex top-0 w-[75%] sm:w-[60%] shadow-xl h-screen bg-white p-10 md:p-0 md:shadow-none md:h-auto md:static md:w-auto' :
+          'hidden'} 
+          md:flex`}
+        >
           {NAV_ITEMS.map((item, idx) => (
             <Link
               key={idx}
               href={item.url}
-              className="relative group mr-4"
+              scroll={false}
+              className="relative group mr-4 font-light"
               onClick={() => setToggle(false)}
             >
               {item.label}
@@ -94,40 +71,16 @@ const Header = (props: Props) => {
             </Link>
           ))}
         </nav>
-      </div>
-      {/* Mobile nav */}
-      <div className={toggle ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ease-in duration-500' : ''}>
-        <div className={
-          toggle
-            ? 'md:hidden fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-white p-10 ease-in duration-500'
-            : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
-          <div className="flex items-center justify-between w-full">
-            <Image src={`/assets/bimss-logo.png`} width={125} height={40} alt="bimssolutions logo" />
-            <div onClick={() => setToggle(false)}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-6 h-6"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
+        <button onClick={() => setToggle(prev => !prev)} className="md:hidden text-gray-500 w-10 h-10 relative focus:outline-none z-50">
+          <div className="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <span aria-hidden="true" className={`${toggle ? 'rotate-45' : '-translate-y-1.5' } block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out`}></span>
+            <span aria-hidden="true" className={`${toggle ? '-rotate-45' : 'translate-y-1.5' } block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out`}></span>
           </div>
-          <div className='border-b border-gray-300 my-4'>
-            <p className="py-4">Laten we samen bouwen</p>
-          </div>
-        </div>
+        </button>
       </div>
-    </header>
+    </motion.header>
   )
 }
 
 export default Header
 
-
-// export default Header

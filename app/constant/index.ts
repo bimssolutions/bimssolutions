@@ -1,7 +1,7 @@
 export const startingFeatures = [
-  {title: 'Design Sprint', description: 'Project analyseren met behulp van een Design Sprint'},
+  {title: 'Design Sprint', description: 'Project analyse d.m.v. een Design Sprint'},
   {title: 'Onderzoek', description: 'Product en concurrentie in kaart brengen'},
-  {title: 'Prototype', description: 'Wireframe/schematiek van jouw project'},
+  {title: 'Prototype', description: 'Wireframe van jouw project'},
   {title: 'Design Concept', description: 'Moodboards op basis van jouw voorkeuren'},
   {title: 'Develop & Launch', description: 'Status updates en oplevering'},
 ];

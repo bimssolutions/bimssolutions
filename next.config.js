@@ -2,14 +2,11 @@
 const path = require('path');
 
 const nextConfig = {
-  experimental: {
-    serverActions: true,
-  },
+  // experimental: {
+  //   serverActions: true,
+  // },
   images: {
-    domains: ["bimss-db.pockethost.io"],
-  },
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
+    domains: ['127.0.0.1'],
   },
 }
 

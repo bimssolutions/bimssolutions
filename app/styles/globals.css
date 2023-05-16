@@ -12,14 +12,20 @@ html {
   min-height: 100%;
 }
 
-article {
+article p {
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+/* article {
   
   p {
     font-size: 18px;
     font-weight: 200;
     margin-bottom: 1rem;
   }
-}
+} */
 
 .gradient-01 {
   background-image: linear-gradient(

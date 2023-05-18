@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_2" data-name="Laag 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 349.51 509.45">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: url(#Naamloos_verloop_563-2);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+        fill: none;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: url(#Naamloos_verloop_229-3);
+      }
+
+      .cls-3 {
+        stroke: url(#Naamloos_verloop_229-2);
+      }
+
+      .cls-4 {
+        stroke: #fff;
+      }
+
+      .cls-5 {
+        stroke: url(#Naamloos_verloop_229);
+      }
+
+      .cls-6 {
+        stroke: url(#Naamloos_verloop_208);
+      }
+
+      .cls-7 {
+        stroke: url(#Naamloos_verloop_155);
+      }
+
+      .cls-8 {
+        stroke: url(#Naamloos_verloop_563);
+      }
+    </style>
+    <linearGradient id="Naamloos_verloop_229" data-name="Naamloos verloop 229" x1="-34.78" y1="470.9" x2="-35.67" y2="183.29" gradientTransform="translate(73.13 38.55) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#196c2e" stop-opacity="0"/>
+      <stop offset=".23" stop-color="#2ea043"/>
+      <stop offset=".47" stop-color="#2ea043"/>
+      <stop offset=".52" stop-color="#56d364"/>
+      <stop offset=".56" stop-color="#2ea043"/>
+      <stop offset=".79" stop-color="#2ea043"/>
+      <stop offset=".96" stop-color="#196c2e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Naamloos_verloop_155" data-name="Naamloos verloop 155" x1="-7.97" y1="462.57" x2="-8.75" y2="210.05" gradientTransform="translate(73.13 38.55) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#196c2e" stop-opacity="0"/>
+      <stop offset=".23" stop-color="#00a2aa"/>
+      <stop offset=".47" stop-color="#00a2aa"/>
+      <stop offset=".52" stop-color="#00beb5"/>
+      <stop offset=".56" stop-color="#00a2aa"/>
+      <stop offset=".79" stop-color="#00a2aa"/>
+      <stop offset=".96" stop-color="#196c2e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Naamloos_verloop_208" data-name="Naamloos verloop 208" x1="17.28" y1="447.03" x2="16.44" y2="176.69" gradientTransform="translate(73.13 38.55) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#196c2e" stop-opacity="0"/>
+      <stop offset=".23" stop-color="#bf009a"/>
+      <stop offset=".47" stop-color="#bf009a"/>
+      <stop offset=".52" stop-color="#ff94ed"/>
+      <stop offset=".56" stop-color="#bf009a"/>
+      <stop offset=".79" stop-color="#bf0090"/>
+      <stop offset=".96" stop-color="#196c2e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Naamloos_verloop_229-2" data-name="Naamloos verloop 229" x1="290.38" y1="527.81" x2="288.88" y2="42.81" gradientTransform="translate(0 527.81) scale(1 -1)" xlink:href="#Naamloos_verloop_229"/>
+    <linearGradient id="Naamloos_verloop_229-3" data-name="Naamloos verloop 229" x1="316.77" y1="473.28" x2="315.52" y2="69.57" gradientTransform="translate(0 527.81) scale(1 -1)" xlink:href="#Naamloos_verloop_229"/>
+    <linearGradient id="Naamloos_verloop_563" data-name="Naamloos verloop 563" x1="6.7" y1="490.43" x2="5.92" y2="237.91" gradientTransform="translate(216.67 527.21) rotate(-180) scale(.99)" gradientUnits="userSpaceOnUse">
+      <stop offset=".05" stop-color="#196c2e" stop-opacity="0"/>
+      <stop offset=".23" stop-color="#0083a2"/>
+      <stop offset=".47" stop-color="#00b6a2"/>
+      <stop offset=".52" stop-color="#00bece"/>
+      <stop offset=".56" stop-color="#00b6a2"/>
+      <stop offset=".79" stop-color="#0083a2"/>
+      <stop offset=".96" stop-color="#196c2e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="Naamloos_verloop_563-2" data-name="Naamloos verloop 563" x1="-46.56" y1="399.43" x2="-47.58" y2="67.66" xlink:href="#Naamloos_verloop_563"/>
+  </defs>
+  <g id="Laag_1-2" data-name="Laag 1">
+    <g>
+      <path class="cls-5" d="m108.35,509.45v-179.44h0c0-26.25,0-47.38,0-75.16v-33.01"/>
+      <path class="cls-7" d="m54.85,501.03v-99.75c0-23.13,9.54-45.43,26.75-62.57h0c17.21-17.13,26.75-39.44,26.75-62.57v-27.47"/>
+      <g>
+        <circle cx="54.91" cy="459.4" r="6.44"/>
+        <circle class="cls-4" cx="54.91" cy="459.4" r="4.94"/>
+      </g>
+      <g>
+        <circle cx="6.44" cy="459.4" r="6.44"/>
+        <circle class="cls-4" cx="6.44" cy="459.4" r="4.94"/>
+      </g>
+      <path class="cls-6" d="m6.44,485.42v-86.69c0-27.79,17.79-54.58,49.91-75.16h0c32.12-20.58,49.91-47.38,49.91-75.16v-33.01"/>
+      <path class="cls-3" d="m289.63,0v30.72c0,27.49,0,48.34,0,76.96h0v269.15h0c0,26.25,0,47.38,0,75.16v33.01"/>
+      <path class="cls-2" d="m289.63,54.45v27.9c0,22.88,9.55,44.92,26.75,61.73h0c17.2,16.81,26.75,38.85,26.75,61.73v99.75c0,23.13-9.54,45.43-26.75,62.57h0c-17.21,17.13-26.75,39.44-26.75,62.57v27.47"/>
+      <g>
+        <circle cx="343.07" cy="247.44" r="6.44"/>
+        <circle class="cls-4" cx="343.07" cy="247.44" r="4.94"/>
+      </g>
+      <path class="cls-8" d="m184.21,48.84v97.31c0,22.56,9.39,44.32,26.35,61.04h0c16.96,16.72,26.35,38.47,26.35,61.04v26.8"/>
+      <g>
+        <ellipse cx="184.27" cy="89.46" rx="6.34" ry="6.28"/>
+        <ellipse class="cls-4" cx="184.27" cy="89.46" rx="4.87" ry="4.82"/>
+      </g>
+      <path class="cls-1" d="m236.92,137.61v174.63c0,22.56,9.39,44.32,26.35,61.04h0c16.96,16.72,26.35,38.47,26.35,61.04v26.8"/>
+      <g>
+        <ellipse cx="236.98" cy="255.55" rx="6.34" ry="6.28"/>
+        <ellipse class="cls-4" cx="236.98" cy="255.55" rx="4.87" ry="4.82"/>
+      </g>
+      <g>
+        <ellipse cx="236.98" cy="153.94" rx="6.34" ry="6.28"/>
+        <ellipse class="cls-4" cx="236.98" cy="153.94" rx="4.87" ry="4.82"/>
+      </g>
+    </g>
+  </g>
+</svg>

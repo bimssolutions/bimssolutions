@@ -1,18 +1,17 @@
 import Footer from "./footer/Footer";
-import Header from './navbar/Header'
-import ExploreCard from "./ExploreCard";
+import Navbar from "./navbar/Navbar";
+import PortFolioCard from "./PortfolioCard";
 import { TitleText, TypingText } from "./CustomTexts";
 import StartSteps from "./StartSteps";
 import NewFeatures from "./NewFeatures";
 import PortfolioList from "./PortfolioList";
 
-
 export {
+  Navbar,
   Footer,
-  Header,
   TypingText,
   TitleText,
-  ExploreCard,
+  PortFolioCard,
   StartSteps,
   NewFeatures,
   PortfolioList,

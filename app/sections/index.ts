@@ -1,15 +1,15 @@
 import About from "./About";
 import Contact from "./Contact";
-import Explore from "./Explore";
+import GetStarted from "./GetStarted";
 import Hero from "./Hero";
-import Portfolio from "./Portfolio";
-import Testimonials from "./Testimonials";
+import Portfolios from "./Portfolios";
+import Services from "./Services";
 
 export {
   About,
   Contact,
-  Explore,
+  GetStarted,
+  Portfolios,
+  Services,
   Hero,
-  Portfolio,
-  Testimonials,
 }

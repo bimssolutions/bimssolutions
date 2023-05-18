@@ -1,4 +1,4 @@
-import { Header, Footer } from './components'
+import { Navbar, Footer } from './components'
 import { Inter } from 'next/font/google'
 import './styles/globals.css'
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
-        <Header />
+        <Navbar />
         <main className="w-full overflow-hidden min-h-screen">
           {children}
         </main>

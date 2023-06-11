@@ -3,7 +3,7 @@ const path = require("path")
 
 const nextConfig = {
   images: {
-    domains: ["127.0.0.1", "https://bimss-db.pockethost.io"],
+    domains: ["127.0.0.1", "bimss-db.pockethost.io"],
   },
 }
 

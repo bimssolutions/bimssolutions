@@ -61,7 +61,6 @@ export default function Navbar() {
             <Link
               key={idx}
               href={item.url}
-              scroll={false}
               className="relative group mr-4 font-light"
               onClick={() => setToggle(false)}
             >

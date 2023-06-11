@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 export default function GetStarted() {
   return (
-    <section id="werkwijze" className="sm:p-16 xs:p-8 px-4 py-12 min-h-screen flex relative z-10">
+    <section className="sm:p-16 xs:p-8 px-4 py-12 min-h-screen relative z-10">
       <motion.div
         variants={staggerContainer()}
         initial="hidden"
@@ -38,7 +38,7 @@ export default function GetStarted() {
             {startingFeatures.map((feature, index) => (
               <StartSteps
                 key={feature.title}
-                number={index+1}
+                number={index + 1}
                 {...feature}
               />
             ))}

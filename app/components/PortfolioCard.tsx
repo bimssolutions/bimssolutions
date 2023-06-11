@@ -15,7 +15,7 @@ interface ExploreCardType {
 
 const colors = [
   'yellow',
-  'green',
+  '#00ffff',
   'blue',
   'orange'
 ]
@@ -33,16 +33,17 @@ export default function PortfolioCard({ id, name, imgUrl, index, categories }: E
           fill={true}
           style={{ objectFit: "cover" }}
           alt={name}
+          loading="lazy"
           className={`absolute w-full h-full bg-[${colors[index]}] object-cover rounded-[24px]`}
         />
-        <div className="absolute bottom-0 p-8 flex justify-end h-full w-full flex-col bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-transparent rounded-b-[24px]">
+        <div className="absolute bottom-0 p-8 flex justify-end h-full w-full flex-col bg-gradient-to-t from-[rgba(0,0,0,0.6)] to-transparent rounded-b-[24px]">
           <h2 className="mb-4 font-semibold sm:text-[32px] text-[24px] text-white">
             {name}
           </h2>
           <div className="flex flex-wrap">
             {JSON.parse(categories).map((tag: string, i: number) => (
               <span
-                className='font-normal text-[16px] mb-2 leading-[20px] mr-2 border py-1 px-2 rounded-full border-white text-white uppercase'
+                className='font-normal text-sm mb-2 leading-5 mr-2 border py-1 px-2 rounded-full border-white text-white uppercase'
                 key={i}>{tag}</span>
             ))}
           </div>

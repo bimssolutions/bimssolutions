@@ -2,11 +2,12 @@ import Image from 'next/image';
 import PocketBase, { Record } from 'pocketbase'
 import React from 'react';
 
-// const url = 'https://bimss-db.pockethost.io'
-const pb = new PocketBase('http://127.0.0.1:8090')
+const url = 'https://bimss-db.pockethost.io'
+const pb = new PocketBase(url)
+// const pb = new PocketBase('http://127.0.0.1:8090')
 
 async function getPortfolio(id: string) {
-  const record = await pb.collection('portfolios').getOne(id); 
+  const record = await pb.collection('portfolios').getOne(id);
 
   return record
 }
@@ -16,7 +17,7 @@ export default async function PortfolioPage({ params }: any) {
   const portfolio = await getPortfolio(params.id)
   const imageURL = (record: Record, imageName: string) => pb.files.getUrl(record, imageName)
 
-  
+
   return (
     <article>
       <div className="max-w-7xl mx-auto sm:px-16 xs:px-8 px-4 py-20">

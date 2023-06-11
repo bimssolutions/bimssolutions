@@ -1,9 +1,9 @@
 import PocketBase, { Record } from 'pocketbase'
 import PortfolioCard from './PortfolioCard';
 
-// const url = 'https://bimss-db.pockethost.io'
-// const pb = new PocketBase(url)
-const pb = new PocketBase('http://127.0.0.1:8090');
+const url = 'https://bimss-db.pockethost.io'
+const pb = new PocketBase(url)
+// const pb = new PocketBase('http://127.0.0.1:8090');
 
 async function getPortfolios() {
   const records = await pb.collection('portfolios').getList(1, 5);

@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     domains: ["127.0.0.1", "bimss-db.pockethost.io"],
   },
+  distDir: "/build",
+  output: "export",
 }
 
 module.exports = nextConfig

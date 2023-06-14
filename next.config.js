@@ -6,6 +6,7 @@ const nextConfig = {
     domains: ["127.0.0.1", "bimss-db.pockethost.io"],
   },
   distDir: "build",
+  output: "standalone",
 }
 
 module.exports = nextConfig

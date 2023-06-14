@@ -16,4 +16,5 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_BIMSSOLUTIONS_B9F26 }}"
           projectId: bimssolutions-b9f26
         env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           FIREBASE_CLI_EXPERIMENTS: webframeworks

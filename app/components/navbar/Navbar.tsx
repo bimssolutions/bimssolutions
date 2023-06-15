@@ -44,11 +44,10 @@ export default function Navbar() {
       <div className='flex items-center justify-between h-full max-w-7xl mx-auto'>
         <Link
           href="/"
-          className="z-0"
+          className="relative h-10 w-52"
         >
-          <Image src={`/assets/bimssolutions-logo.png`}
-            height={40}
-            width={200}
+          <Image src='/assets/bimssolutions-logo.svg'
+            fill
             priority={true}
             alt="Bimssolutions logo" />
         </Link>

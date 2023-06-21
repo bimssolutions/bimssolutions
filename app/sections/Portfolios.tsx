@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 import { staggerContainer } from '../utils/animations';
 import { TypingText, TitleText, PortfolioList } from '../components';
+import { Suspense } from 'react';
 
 export default function Portfolios() {
   return (
@@ -18,7 +19,9 @@ export default function Portfolios() {
         <TypingText title="| Portfolio" textStyles="text-center" />
         <TitleText title='Duik in onze projecten' textStyles='text-center' />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] z-10 gap-5">
-          <PortfolioList/>
+          <Suspense fallback={<p>loading...</p>}>
+            <PortfolioList />
+          </Suspense>
         </div>
       </motion.div>
     </section>

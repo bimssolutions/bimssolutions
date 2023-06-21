@@ -14,12 +14,10 @@ import PocketBase, { Record } from 'pocketbase'
 export default async function PortFolioPage() {
   // const portfolios = await getPortfolios()
   // const imageURL = (record: Record, imageName: string) => pb.files.getUrl(record, imageName)
-  
+
   return (
     <section className="sm:p-16 xs:p-8 py-12 px-4 min-h-screen flex relative z-10">
-      <div
-        className="max-w-7xl"
-      >
+      <div className="max-w-7xl">
         <h1>Portfolio</h1>
       </div>
     </section>

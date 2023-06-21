@@ -7,7 +7,7 @@ import Image from "next/image"
 
 export default function page() {
   return (
-    <section id="started" className="py-20 px-4 relative z-10">
+    <section className="sm:p-16 xs:p-8 py-12 px-4 min-h-screen flex relative z-10">
       <motion.div
         variants={staggerContainer()}
         initial="hidden"
@@ -17,10 +17,10 @@ export default function page() {
       >
         <motion.div
           variants={fadeIn('right', 'tween', 0.1, 1)}
-          className="flex-1 flex justify-center items-center"
+          className="relative"
         >
           <Image
-            src="/assets/IMG_9416.jpeg"
+            src="/assets/bims-group.jpeg"
             alt="get-started"
             priority={true}
             width={500}
@@ -30,7 +30,7 @@ export default function page() {
         </motion.div>
         <motion.div
           variants={fadeIn('left', 'tween', 0.2, 1)}
-          className="flex-[0.75] flex justify-center flex-col"
+          className="flex justify-center flex-col"
         >
           <TypingText title="| Over ons" />
           <TitleText title="Welkom bij Bimssolutions" />

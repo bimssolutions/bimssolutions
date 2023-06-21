@@ -2,8 +2,16 @@
 const path = require("path")
 
 const nextConfig = {
+  // images: {
+  //   domains: ["127.0.0.1", "bimss-db.pockethost.io"],
+  // },
   images: {
-    domains: ["127.0.0.1", "bimss-db.pockethost.io"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "bimss-db.pockethost.io",
+      },
+    ],
   },
   distDir: "build",
 }

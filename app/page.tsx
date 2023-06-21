@@ -10,7 +10,7 @@ export default function Home() {
         <div className="gradient-03 z-0" />
       </div>
       <div className="relative">
-        {/* <Portfolios /> */}
+        <Portfolios />
         <div className="gradient-04 z-0" />
         <GetStarted />
       </div>

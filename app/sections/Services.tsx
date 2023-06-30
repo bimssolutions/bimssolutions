@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { TypingText, TitleText, NewFeatures } from '../components';
 
-import { fadeIn, staggerContainer, planetVariants } from '../utils/animations';
+import { fadeIn, staggerContainer } from '../utils/animations';
 import { newFeatures } from '../constant';
 import Image from 'next/image';
 
@@ -21,7 +21,7 @@ export default function Services() {
           variants={fadeIn('right', 'tween', 0.2, 1)}
           className="flex-1 flex justify-center flex-col"
         >
-          <TypingText title="| Diensten" />
+          {/* <TypingText title="| Diensten" /> */}
           <TitleText title="Wat doet Bimssolutions?" />
           <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
             {newFeatures.map((feature) => (
@@ -41,7 +41,7 @@ export default function Services() {
             alt="whats-new"
             height={500}
             width={500}
-            style={{objectFit: "contain"}}
+            style={{ objectFit: "contain" }}
             className='w-[90%] h-[90%]'
           />
         </motion.div>

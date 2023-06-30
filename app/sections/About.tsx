@@ -17,7 +17,7 @@ export default function About() {
         viewport={{ once: true, amount: 0.25 }}
         className="flex justify-center items-center flex-col max-w-7xl mx-auto"
       >
-        <TypingText title="| Over Bimssolutions" textStyles="text-center" />
+        {/* <TypingText title="| Over Bimssolutions" textStyles="text-center" /> */}
         <motion.p
           variants={fadeIn('up', 'tween', 0.2, 1)}
           className="mt-[8px] sm:text-[32px] text-[20px] font-extralight text-center"

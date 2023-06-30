@@ -18,7 +18,7 @@ export default function page() {
           variants={fadeIn('up', 'tween', 0.2, 1)}
           className="flex flex-1 justify-center flex-col"
         >
-          <TypingText title="| Over ons" />
+          {/* <TypingText title="| Over ons" /> */}
           <TitleText title="Welkom bij Bimssolutions" />
           <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
             <p className="flex-1 font-normal text-[18px] leading-[32px]">

@@ -16,7 +16,7 @@ export default function Portfolios() {
         viewport={{ once: true, amount: 0.25 }}
         className="flex flex-col max-w-7xl mx-auto"
       >
-        <TypingText title="| Portfolio" textStyles="text-center" />
+        {/* <TypingText title="| Portfolio" textStyles="text-center" /> */}
         <TitleText title='Duik in onze projecten' textStyles='text-center' />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] z-10 gap-5">
           <Suspense fallback={<p>loading...</p>}>

@@ -18,7 +18,7 @@ export default function GetStarted() {
         className="max-w-7xl mx-auto flex lg:flex-row flex-col gap-8"
       >
         <motion.div
-          variants={planetVariants('left')}
+          variants={fadeIn('right', 'tween', 0.2, 1)}
           className="flex-1 flex justify-center items-center"
         >
           <Image
@@ -32,7 +32,7 @@ export default function GetStarted() {
           variants={fadeIn('left', 'tween', 0.2, 1)}
           className="flex-[0.75] flex justify-center flex-col"
         >
-          <TypingText title="| Onze werkwijze" />
+          {/* <TypingText title="| Onze werkwijze" /> */}
           <TitleText title="Hoe wij u helpen" />
           <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
             {startingFeatures.map((feature, index) => (

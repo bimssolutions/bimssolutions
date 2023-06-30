@@ -3,14 +3,9 @@ const path = require("path")
 
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "bimss-db.pockethost.io",
-      },
-    ],
+    domains: ["bimss-db.pockethost.io"],
   },
-  distDir: "build",
+  output: "standalone",
 }
 
 module.exports = nextConfig

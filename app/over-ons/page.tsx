@@ -17,7 +17,7 @@ export default function page() {
       >
         <motion.div
           variants={fadeIn('right', 'tween', 0.1, 1)}
-          className="relative"
+          className="flex-1 flex justify-center items-center"
         >
           <Image
             src="/assets/bims-group.jpeg"
@@ -30,9 +30,9 @@ export default function page() {
         </motion.div>
         <motion.div
           variants={fadeIn('left', 'tween', 0.2, 1)}
-          className="flex justify-center flex-col"
+          className="flex-[0.75] flex justify-center flex-col"
         >
-          <TypingText title="| Over ons" />
+          {/* <TypingText title="| Over ons" /> */}
           <TitleText title="Welkom bij Bimssolutions" />
           <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
             <p className="flex-1 font-normal text-[18px] leading-[32px]">

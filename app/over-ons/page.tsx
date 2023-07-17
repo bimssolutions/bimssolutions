@@ -106,7 +106,7 @@ export default function page() {
       </motion.div>
 
       <div className="max-w-7xl mt-32 mb-16 mx-auto flex justify-center items-center">
-        <TitleText title="Een compact, maar toegeweid team" />
+        <TitleText title="Een compact, maar toegewijd team" />
       </div >
 
       <motion.div

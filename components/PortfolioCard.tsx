@@ -1,7 +1,7 @@
 'use client'
 
-import { motion } from "framer-motion"
 import { fadeIn } from '@/app/utils/animations'
+import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -14,7 +14,7 @@ interface ExploreCardType {
 }
 
 const colors = [
-  'yellow',
+  '#000',
   '#00ffff',
   'blue',
   'orange'

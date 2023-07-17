@@ -20,18 +20,18 @@ const NAV_ITEMS: NavItems[] = [
     label: 'Over ons',
     url: '/over-ons'
   },
+  // {
+  //   label: 'Portfolio',
+  //   url: '/portfolios'
+  // },
   {
     label: 'Diensten',
     url: '/diensten'
   },
-  {
-    label: 'Portfolio',
-    url: '/portfolios'
-  },
-  {
-    label: 'Werkwijze',
-    url: '/werkwijze'
-  },
+  // {
+  //   label: 'Werkwijze',
+  //   url: '/werkwijze'
+  // },
 ]
 
 export default function Navbar() {
@@ -70,9 +70,6 @@ export default function Navbar() {
               onClick={() => setToggle(false)}
             >
               <span className={`'text-primary-black'}`}>{item.label}</span>
-              {/* <span
-                className={`absolute -bottom-0.5 left-0 h-[1px] inline-block w-0 bg-black group-hover:w-full ${pathname === item.url ? 'w-full' : 'w-0'} transition-[width] ease duration-300`}
-              /> */}
               <span
                 className={`absolute -bottom-0.5 left-0 h-[1px] inline-block w-full bg-primary-black opacity-0 group-hover:opacity-100 ${pathname === item.url ? 'opacity-100' : 'opacity-0'} transition-all ease duration-300`}
               />

@@ -1,5 +1,5 @@
 export const startingFeatures = [
-  { title: "Leren kennen", description: "Een connectie creëren met jouw idee" },
+  { title: "Discovery", description: "Een connectie creëren met jouw idee" },
   {
     title: "Onderzoek",
     description: "Product en ideëen visueel in kaart brengen",
@@ -10,6 +10,49 @@ export const startingFeatures = [
     description: "Tastbaar product versies op basis van jouw feedback",
   },
   { title: "Develop & Launch", description: "Status updates en oplevering" },
+]
+
+export const serviceFeatures = [
+  {
+    imgUrl: "git.svg",
+    title: "Up-to-date website",
+    subtitle: "Een op maat gemaakte web-oplossing met Wordpress Elementor of Webflow.",
+  },
+  {
+    imgUrl: "design.svg",
+    title: "Dagelijkse backups",
+    subtitle: "Focus op gebruiksvriendelijke interfaces die de gebruiker centraal stelt",
+  },
+  {
+    imgUrl: '/hosting.svg',
+    title: "Sitespeed",
+    subtitle:'Focus op gebruiksvriendelijke interfaces die de gebruiker centraal stelt',
+  },
+  {
+    imgUrl: "wordpress.svg",
+    title: "Extra beveiliging",
+    subtitle: "Betrouwbare hosting oplossingen voor een veilige en stabiele website omgeving.",
+  },
+  {
+    imgUrl: "consultancy2.svg",
+    title: "Website aanpassingen",
+    subtitle: "Digitale strategieën en het optimaliseren van processen en activiteiten",
+  },
+  {
+    imgUrl: "consultancy2.svg",
+    title: "Support",
+    subtitle: "Digitale strategieën en het optimaliseren van processen en activiteiten",
+  },
+  {
+    imgUrl: "consultancy2.svg",
+    title: "Maandelijks rapport",
+    subtitle: "Digitale strategieën en het optimaliseren van processen en activiteiten",
+  },
+  {
+    imgUrl: "consultancy2.svg",
+    title: "Support",
+    subtitle: "WordPress diensten met backups, updates en website optimalisatie.",
+  },
 ]
 
 export const newFeatures = [

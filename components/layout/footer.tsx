@@ -1,6 +1,5 @@
 "use client"
 
-import { socials } from "@/app/constant";
 import { footerVariants } from "@/app/utils/animations";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -27,7 +26,7 @@ export default function Footer() {
                 alt='mail'
               />
               <span className="font-normal text-white text-[16px]">
-                Mail ons
+                Neem contact op
               </span>
             </button>
           </a>

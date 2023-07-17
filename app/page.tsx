@@ -1,4 +1,4 @@
-import { About, Portfolios, GetStarted, Hero, Services } from "./sections";
+import { About, GetStarted, Hero, Portfolios, Services, Testimonials } from "./sections";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <Portfolios />
         <div className="gradient-04 z-0" />
         <GetStarted />
+        <Testimonials />
       </div>
     </>
   )

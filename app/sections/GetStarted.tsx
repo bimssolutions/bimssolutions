@@ -1,11 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import { TypingText, TitleText, StartSteps } from '../components';
+import { StartSteps, TitleText, TypingText } from '../../components';
 
-import { fadeIn, staggerContainer, planetVariants } from '../utils/animations';
-import { startingFeatures } from '../constant';
 import Image from 'next/image';
+import { startingFeatures } from '../constant';
+import { fadeIn, staggerContainer } from '../utils/animations';
 
 export default function GetStarted() {
   return (
@@ -32,7 +32,7 @@ export default function GetStarted() {
           variants={fadeIn('left', 'tween', 0.2, 1)}
           className="flex-[0.75] flex justify-center flex-col"
         >
-          {/* <TypingText title="| Onze werkwijze" /> */}
+          <TypingText title="| Onze werkwijze" />
           <TitleText title="Hoe wij u helpen" />
           <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
             {startingFeatures.map((feature, index) => (

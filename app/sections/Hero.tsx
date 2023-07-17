@@ -1,17 +1,17 @@
 "use client"
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer, textVariant } from "../utils/animations";
+import Image from "next/image";
 import Link from "next/link";
+import { fadeIn, staggerContainer, textVariant } from "../utils/animations";
 
 export default function Hero() {
   return (
     <section
-      className="sm:p-16 xs:p-8 py-12 px-4 h-screen flex items-center"
+      className="sm:p-16 xs:p-8 py-12 px-4 z-10"
     >
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto"
+        className="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mx-auto"
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
@@ -39,6 +39,7 @@ export default function Hero() {
         >
           <Image
             src="/assets/bimssolutions-git.svg"
+            className="lg:float-right"
             alt="bimssolutions landing page repo image"
             width={400}
             priority={true}

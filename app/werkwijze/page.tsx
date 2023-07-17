@@ -1,8 +1,8 @@
 "use client"
 
+import { TitleText, TypingText } from "@/components"
 import { motion } from "framer-motion"
 import { fadeIn, staggerContainer } from "../utils/animations"
-import { TitleText, TypingText } from "../components"
 
 export default function page() {
   return (
@@ -18,7 +18,7 @@ export default function page() {
           variants={fadeIn('up', 'tween', 0.2, 1)}
           className="flex flex-1 justify-center flex-col"
         >
-          {/* <TypingText title="| Over ons" /> */}
+          <TypingText title="| Over ons" />
           <TitleText title="Welkom bij Bimssolutions" />
           <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
             <p className="flex-1 font-normal text-[18px] leading-[32px]">

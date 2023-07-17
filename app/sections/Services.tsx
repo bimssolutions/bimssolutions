@@ -1,11 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import { TypingText, TitleText, NewFeatures } from '../components';
+import { NewFeatures, TitleText, TypingText } from '../../components';
 
-import { fadeIn, staggerContainer } from '../utils/animations';
-import { newFeatures } from '../constant';
 import Image from 'next/image';
+import { newFeatures } from '../constant';
+import { fadeIn, staggerContainer } from '../utils/animations';
 
 export default function Services() {
   return (
@@ -21,7 +21,7 @@ export default function Services() {
           variants={fadeIn('right', 'tween', 0.2, 1)}
           className="flex-1 flex justify-center flex-col"
         >
-          {/* <TypingText title="| Diensten" /> */}
+          <TypingText title="| Diensten" />
           <TitleText title="Wat doet Bimssolutions?" />
           <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
             {newFeatures.map((feature) => (

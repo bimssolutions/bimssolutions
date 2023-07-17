@@ -4,12 +4,11 @@ import GetStarted from "./GetStarted";
 import Hero from "./Hero";
 import Portfolios from "./Portfolios";
 import Services from "./Services";
+import Testimonials from "./Testimonials";
 
 export {
   About,
   Contact,
-  GetStarted,
-  Portfolios,
-  Services,
-  Hero,
-}
+  GetStarted, Hero, Portfolios,
+  Services, Testimonials
+};

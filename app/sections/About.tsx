@@ -1,10 +1,10 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import { TypingText } from '../components/CustomTexts';
 
-import { fadeIn, staggerContainer } from '../utils/animations';
+import { TypingText } from '@/components';
 import Link from 'next/link';
+import { fadeIn, staggerContainer } from '../utils/animations';
 
 export default function About() {
   return (
@@ -17,11 +17,11 @@ export default function About() {
         viewport={{ once: true, amount: 0.25 }}
         className="flex justify-center items-center flex-col max-w-7xl mx-auto"
       >
-        {/* <TypingText title="| Over Bimssolutions" textStyles="text-center" /> */}
+        <TypingText title="| Over Bimssolutions" textStyles="text-center" />
         <motion.p
           variants={fadeIn('up', 'tween', 0.2, 1)}
           className="mt-[8px] sm:text-[32px] text-[20px] font-extralight text-center"
-        >Een <b>full-service agency</b> dat zich richt op <b>design</b> en <b>development</b> van prachtige digitale producten, merken en ervaringen.
+        >Een <b>full-service agency</b> dat zich richt op <b>design</b> en <b>development</b> van digitale producten, merken en ervaringen.
         </motion.p>
         <motion.button
           variants={fadeIn('up', 'tween', 0.3, 1)}

@@ -1,5 +1,5 @@
-import { Navbar, Footer } from './components'
 import { Inter } from 'next/font/google'
+import { Footer, Navbar } from '../components'
 import './styles/globals.css'
 
 const inter = Inter({
@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
         <Navbar />
-        <main className="w-full overflow-hidden min-h-screen">
+        <main className="w-full overflow-hidden min-h-screen py-32">
           {children}
         </main>
         <Footer />

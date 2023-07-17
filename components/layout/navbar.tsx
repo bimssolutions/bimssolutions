@@ -1,9 +1,10 @@
 "use client"
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { useState } from 'react'
+import useScroll from '@/lib/hooks/use-scroll';
+import Image from 'next/image';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 
 interface NavItems {
   label: string,
@@ -36,12 +37,17 @@ const NAV_ITEMS: NavItems[] = [
 export default function Navbar() {
   const [toggle, setToggle] = useState(false)
   const pathname = usePathname();
+  const scrolled = useScroll(50);
+
   return (
     <header
-      className='sticky bg-white border bg-opacity-70 backdrop-filter backdrop-blur-sm w-full top-0 sm:px-16 xs:px-8 px-4 h-20 z-20'
+      className={`fixed top-0 w-full flex justify-center ${scrolled
+        ? "border-b border-gray-200 bg-white/50 backdrop-blur-xl"
+        : "bg-white/0"
+        } z-30 transition-all`}
     >
-      <div className="absolute w-[50%] inset-0 gradient-01" />
-      <div className='flex items-center justify-between h-full max-w-7xl mx-auto'>
+      {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
+      <div className='mx-5 flex h-20 max-w-screen-xl items-center justify-between w-full'>
         <Link
           href="/"
           className="relative h-10 w-52"
@@ -63,17 +69,20 @@ export default function Navbar() {
               className="relative group mr-4 font-light"
               onClick={() => setToggle(false)}
             >
-              <span>{item.label}</span>
-              <span
+              <span className={`'text-primary-black'}`}>{item.label}</span>
+              {/* <span
                 className={`absolute -bottom-0.5 left-0 h-[1px] inline-block w-0 bg-black group-hover:w-full ${pathname === item.url ? 'w-full' : 'w-0'} transition-[width] ease duration-300`}
+              /> */}
+              <span
+                className={`absolute -bottom-0.5 left-0 h-[1px] inline-block w-full bg-primary-black opacity-0 group-hover:opacity-100 ${pathname === item.url ? 'opacity-100' : 'opacity-0'} transition-all ease duration-300`}
               />
             </Link>
           ))}
         </nav>
         <button onClick={() => setToggle(prev => !prev)} className="md:hidden text-gray-500 w-10 h-10 relative focus:outline-none z-50">
           <div className="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <span aria-hidden="true" className={`${toggle ? 'rotate-45' : '-translate-y-1.5'} block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out`}></span>
-            <span aria-hidden="true" className={`${toggle ? '-rotate-45' : 'translate-y-1.5'} block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out`}></span>
+            <span aria-hidden="true" className={`${toggle ? 'rotate-45' : '-translate-y-1'} block absolute h-0.5 w-5 bg-black transform transition duration-500 ease-in-out`}></span>
+            <span aria-hidden="true" className={`${toggle ? '-rotate-45' : 'translate-y-1'} block absolute  h-0.5 w-5 bg-black transform  transition duration-500 ease-in-out`}></span>
           </div>
         </button>
       </div>
